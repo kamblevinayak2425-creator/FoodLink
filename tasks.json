@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FoodLink: install dependencies",
+      "type": "shell",
+      "command": "python -m pip install -r requirements.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "FoodLink: run tests",
+      "type": "shell",
+      "command": "python -m unittest discover -s tests -v",
+      "problemMatcher": []
+    },
+    {
+      "label": "FoodLink: start Flask",
+      "type": "shell",
+      "command": "python -m flask --app app run --debug",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
